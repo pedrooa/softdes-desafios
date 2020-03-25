@@ -1,0 +1,7 @@
+site_name: SoftDes
+nav:
+    - Home: about.md
+    - Guia Alunos: users.md
+    - Guia Professores: teachers.md
+    - Guia de Desenvolvimento: dev.md
+    - Documentação da API: about.md
