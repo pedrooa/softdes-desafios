@@ -1,3 +1,3 @@
-def desafio1(n):
+def desafio1(variable):
     return 0
-    # return n
+    # return variable
