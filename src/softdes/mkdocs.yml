@@ -1,4 +1,4 @@
-site_name: SoftDes
+site_name: softdes-desafios
 nav:
     - Home: about.md
     - Guia Alunos: users.md
