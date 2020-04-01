@@ -48,7 +48,7 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../about/">Home</a>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                     </li>
                 </ul>
                 <ul>
@@ -113,14 +113,24 @@
 <li>Criar uma base de dados quiz.db através do sqlite3.
    <code>$ sqlite3 quiz.db</code></li>
 <li>Rodar as queries presentes no arquivo quiz.sql no terminal do sqlite aberto nessa base de dados.</li>
-<li>Popular um arquivo users.csv com usuarios(*Obs: -logins 'admin' e 'fabioja' são reservados para professores).</li>
+<li>Popular um arquivo users.csv com usuarios(*Obs: logins 'admin' e 'fabioja' são reservados para professores).</li>
 <li>Rodar o script adduser.py para adicionar esses usuarios na base de dados.</li>
 <li>Rodar o arquivo softdes.py, que irá inicializar o servidor do programa.</li>
 </ol>
 <h2 id="instalacao-do-software">Instalação do software</h2>
-<p>sqlite3, Flask, Flask_httpauth, hashlib e python são pacotes necessários para rodar o servidor.</p>
+<p>sqlite3, Flask, Flask_httpauth, hashlib e python3 são pacotes necessários para rodar o servidor.</p>
 <h2 id="estrutura-do-codigo-em-alto-nivel">Estrutura do código em alto nível</h2>
-<p>Esse projeto faz uso de python, javascript, SQL, html, css e javascript</p>
+<p>O presente software oferece uma plataforma para os alunos de Design de Software submeterem suas respostas aos quizzes da matéria por meio de comunicações de API,
+seguindo o padrão REST. O servidor recebe o arquivo com a solução de determinado quizz e devolve ao aluno um feedback sobre a validade ou não da sua resposta. Os seguintes
+diagramas mostram dois importantes fluxos de eventos:</p>
+<ul>
+<li>Autenticação de usuário:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/Autentica.png" /></p>
+<ul>
+<li>Envio de respostas:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/enviar_resposta.png" /></p>
               
             </div>
           </div>
