@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Users - softdes-desafios</title>
+        <title>Api - softdes-desafios</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -51,8 +51,8 @@
                     <li >
                         <a href="../about/">About</a>
                     </li>
-                    <li >
-                        <a href="../api/">Api</a>
+                    <li class="active">
+                        <a href="./">Api</a>
                     </li>
                     <li >
                         <a href="../dev/">Dev</a>
@@ -60,8 +60,8 @@
                     <li >
                         <a href="../teachers/">Teachers</a>
                     </li>
-                    <li class="active">
-                        <a href="./">Users</a>
+                    <li >
+                        <a href="../users/">Users</a>
                     </li>
                 </ul>
 
@@ -72,12 +72,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../teachers/">
+                        <a rel="next" href="../about/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="../dev/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -89,28 +89,35 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#guia-para-os-alunos">Guia para os alunos</a></li>
-            <li><a href="#como-usar">Como usar</a></li>
-            <li><a href="#resposta-correta">Resposta correta</a></li>
-            <li><a href="#resposta-errada">Resposta errada</a></li>
+        <li class="main active"><a href="#guia-para-a-api">Guia para a API</a></li>
+            <li><a href="#commands">Commands</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="guia-para-os-alunos">Guia para os alunos</h1>
-<h2 id="como-usar">Como usar</h2>
+<h1 id="guia-para-a-api">Guia para a API</h1>
+<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
+<h2 id="commands">Commands</h2>
 <ul>
-<li><code>http://localhost:80</code> - Link de acesso.</li>
-<li><code>Dashboard lateral esquerda</code> - Escolher desse menu o desafio que queira responder.</li>
-<li><code>Escolher Arquivo</code> - Botão para selecionar o código fonte com sua solução.</li>
-<li><code>Enviar</code> - Botão de envio.</li>
+<li><code>http://0.0.0.0/</code> </li>
 </ul>
-<h2 id="resposta-correta">Resposta correta</h2>
-<p>Caso sua resposta esteja correta, o Feedback e o Resultado devem sair como na imagem a seguir:</p>
-<p><img alt="Screenshot" src="../img/user1.png" /></p>
-<h2 id="resposta-errada">Resposta errada</h2>
-<p>Caso sua resposta esteja errada, o Feedback e o Resultado devem sair como na imagem a seguir:</p>
-<p><img alt="Screenshot" src="../img/user2.png" /></p></div>
+<p><code>[GET]</code> - Carrega o pop-up de login inicialmente e caso já esteja logado carrega a pagina inicial mostrando os desafios disponíveis e envios.
+    * Parameters: ID (Id do desafio a ser exibido) - Não obrigatório.</p>
+<p><code>[POST]</code> - Envia o desafio carregado pelo aluno para o lambda.
+    * Parameters: ID (Id do desafio que foi enviado)
+    * Files: Arquivo da solução ao desafio.</p>
+<ul>
+<li><code>http://0.0.0.0/pass</code> </li>
+</ul>
+<p><code>[GET]</code> - Carrega o pop-up de login inicialmente e caso já esteja logado a pagina para a troca de senha.</p>
+<p><code>[POST]</code> - Realiza a troca de senha do usuário.
+    * Form['old'] - Senha antiga inserida pelo usuario.
+    * Form['new'] - Senha nova inserida pelo usuario.
+    * Form['again'] - Senha nova repetida inserida pelo usuario.</p>
+<ul>
+<li><code>http://0.0.0.0/logout</code> </li>
+</ul>
+<p><code>[GET]</code> - Desloga o usuario e carrega o index.html.</p></div>
         </div>
 
         <footer class="col-md-12">
