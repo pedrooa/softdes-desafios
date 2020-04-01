@@ -3,14 +3,6 @@
 
     
     <url>
-     <loc>/</loc>
-     <lastmod>2020-04-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
      <loc>/about/</loc>
      <lastmod>2020-04-01</lastmod>
      <changefreq>daily</changefreq>
@@ -19,15 +11,7 @@
 
     
     <url>
-     <loc>/api/</loc>
-     <lastmod>2020-04-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/dev/</loc>
+     <loc>/users/</loc>
      <lastmod>2020-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -43,7 +27,15 @@
 
     
     <url>
-     <loc>/users/</loc>
+     <loc>/dev/</loc>
+     <lastmod>2020-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/api/</loc>
      <lastmod>2020-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>

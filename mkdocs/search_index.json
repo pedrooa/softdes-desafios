@@ -1,29 +1,9 @@
 {
     "docs": [
         {
-            "location": "/",
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Home"
-        },
-        {
-            "location": "/#welcome-to-mkdocs",
-            "text": "For full documentation visit  mkdocs.org .",
-            "title": "Welcome to MkDocs"
-        },
-        {
-            "location": "/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
-        },
-        {
-            "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
-        },
-        {
             "location": "/about/",
             "text": "SoftDes 2018\n\n\nSobre o webapp\n\n\n\n\nEste \u00e9 um webapp criado para professores postarem desafios de Design de Software e para os alunos submeterem suas respostas, obtendo feedback imediato sobre a sua solu\u00e7\u00e3o.",
-            "title": "About"
+            "title": "Home"
         },
         {
             "location": "/about/#softdes-2018",
@@ -41,24 +21,54 @@
             "title": "Este \u00e9 um webapp criado para professores postarem desafios de Design de Software e para os alunos submeterem suas respostas, obtendo feedback imediato sobre a sua solu\u00e7\u00e3o."
         },
         {
-            "location": "/api/",
-            "text": "Guia para a API\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nhttp://0.0.0.0/\n \n\n\n\n\n[GET]\n - Carrega o pop-up de login inicialmente e caso j\u00e1 esteja logado carrega a pagina inicial mostrando os desafios dispon\u00edveis e envios.\n    * Parameters: ID (Id do desafio a ser exibido) - N\u00e3o obrigat\u00f3rio.\n\n\n[POST]\n - Envia o desafio carregado pelo aluno para o lambda.\n    * Parameters: ID (Id do desafio que foi enviado)\n    * Files: Arquivo da solu\u00e7\u00e3o ao desafio.\n\n\n\n\nhttp://0.0.0.0/pass\n \n\n\n\n\n[GET]\n - Carrega o pop-up de login inicialmente e caso j\u00e1 esteja logado a pagina para a troca de senha.\n\n\n[POST]\n - Realiza a troca de senha do usu\u00e1rio.\n    * Form['old'] - Senha antiga inserida pelo usuario.\n    * Form['new'] - Senha nova inserida pelo usuario.\n    * Form['again'] - Senha nova repetida inserida pelo usuario.\n\n\n\n\nhttp://0.0.0.0/logout\n \n\n\n\n\n[GET]\n - Desloga o usuario e carrega o index.html.",
-            "title": "Api"
+            "location": "/users/",
+            "text": "Guia para os alunos\n\n\nComo usar\n\n\n\n\nhttp://localhost:80\n - Link de acesso.\n\n\nDashboard lateral esquerda\n - Escolher desse menu o desafio que queira responder.\n\n\nEscolher Arquivo\n - Bot\u00e3o para selecionar o c\u00f3digo fonte com sua solu\u00e7\u00e3o.\n\n\nEnviar\n - Bot\u00e3o de envio.\n\n\n\n\nResposta correta\n\n\nCaso sua resposta esteja correta, o Feedback e o Resultado devem sair como na imagem a seguir:\n\n\n\n\nResposta errada\n\n\nCaso sua resposta esteja errada, o Feedback e o Resultado devem sair como na imagem a seguir:",
+            "title": "Guia Alunos"
         },
         {
-            "location": "/api/#guia-para-a-api",
-            "text": "For full documentation visit  mkdocs.org .",
-            "title": "Guia para a API"
+            "location": "/users/#guia-para-os-alunos",
+            "text": "",
+            "title": "Guia para os alunos"
         },
         {
-            "location": "/api/#commands",
-            "text": "http://0.0.0.0/     [GET]  - Carrega o pop-up de login inicialmente e caso j\u00e1 esteja logado carrega a pagina inicial mostrando os desafios dispon\u00edveis e envios.\n    * Parameters: ID (Id do desafio a ser exibido) - N\u00e3o obrigat\u00f3rio.  [POST]  - Envia o desafio carregado pelo aluno para o lambda.\n    * Parameters: ID (Id do desafio que foi enviado)\n    * Files: Arquivo da solu\u00e7\u00e3o ao desafio.   http://0.0.0.0/pass     [GET]  - Carrega o pop-up de login inicialmente e caso j\u00e1 esteja logado a pagina para a troca de senha.  [POST]  - Realiza a troca de senha do usu\u00e1rio.\n    * Form['old'] - Senha antiga inserida pelo usuario.\n    * Form['new'] - Senha nova inserida pelo usuario.\n    * Form['again'] - Senha nova repetida inserida pelo usuario.   http://0.0.0.0/logout     [GET]  - Desloga o usuario e carrega o index.html.",
-            "title": "Commands"
+            "location": "/users/#como-usar",
+            "text": "http://localhost:80  - Link de acesso.  Dashboard lateral esquerda  - Escolher desse menu o desafio que queira responder.  Escolher Arquivo  - Bot\u00e3o para selecionar o c\u00f3digo fonte com sua solu\u00e7\u00e3o.  Enviar  - Bot\u00e3o de envio.",
+            "title": "Como usar"
+        },
+        {
+            "location": "/users/#resposta-correta",
+            "text": "Caso sua resposta esteja correta, o Feedback e o Resultado devem sair como na imagem a seguir:",
+            "title": "Resposta correta"
+        },
+        {
+            "location": "/users/#resposta-errada",
+            "text": "Caso sua resposta esteja errada, o Feedback e o Resultado devem sair como na imagem a seguir:",
+            "title": "Resposta errada"
+        },
+        {
+            "location": "/teachers/",
+            "text": "Guia para os professores\n\n\nComo adicionar usuarios\n\n\nPara adicionar novos usu\u00e1rios \u00e9 necess\u00e1rio alterar/criar um arquivo users.csv na ra\u00edz do projeto.\nEle deve ser populado linha por linha, em que cada linha representa um aluno, no formato : Login,Senha\n\n\n\nFeito isso, o script add_user.py dever\u00e1 ser rodado para adicionar na base de dados os novos usu\u00e1rios.\n\n\nComo adicionar novos desafios\n\n\nEntrar na base de dados atrav\u00e9s do sqlite3 e rodar a uma query de inser\u00e7\u00e3o na table QUIZ.\n\n\nExemplo:\n\n\nInsert into QUIZ\n(numb, release, expire, problem, tests, results, diagnosis)\nvalues\n(2, '2018-08-02', '2020-12-31 23:59:59', 'Exemplo de problema-novo', '[[1],[2],[3]]', '[0, 0, 0]', '[\"a\",\"b\",\"c\"]')\n\n\n\nNa imagem acima \u00e9 poss\u00edvel verificar que o novo desafio foi inserido e est\u00e1 vis\u00edvel como \"Desafio 2\" no menu lateral.",
+            "title": "Guia Professores"
+        },
+        {
+            "location": "/teachers/#guia-para-os-professores",
+            "text": "",
+            "title": "Guia para os professores"
+        },
+        {
+            "location": "/teachers/#como-adicionar-usuarios",
+            "text": "Para adicionar novos usu\u00e1rios \u00e9 necess\u00e1rio alterar/criar um arquivo users.csv na ra\u00edz do projeto.\nEle deve ser populado linha por linha, em que cada linha representa um aluno, no formato : Login,Senha  Feito isso, o script add_user.py dever\u00e1 ser rodado para adicionar na base de dados os novos usu\u00e1rios.",
+            "title": "Como adicionar usuarios"
+        },
+        {
+            "location": "/teachers/#como-adicionar-novos-desafios",
+            "text": "Entrar na base de dados atrav\u00e9s do sqlite3 e rodar a uma query de inser\u00e7\u00e3o na table QUIZ.  Exemplo:  Insert into QUIZ\n(numb, release, expire, problem, tests, results, diagnosis)\nvalues\n(2, '2018-08-02', '2020-12-31 23:59:59', 'Exemplo de problema-novo', '[[1],[2],[3]]', '[0, 0, 0]', '[\"a\",\"b\",\"c\"]')  \nNa imagem acima \u00e9 poss\u00edvel verificar que o novo desafio foi inserido e est\u00e1 vis\u00edvel como \"Desafio 2\" no menu lateral.",
+            "title": "Como adicionar novos desafios"
         },
         {
             "location": "/dev/",
             "text": "Guia para os desenvolvedores\n\n\nComo configurar o ambiente de desenvolvimento\n\n\n\n\nCriar uma base de dados quiz.db atrav\u00e9s do sqlite3.\n   \n$ sqlite3 quiz.db\n\n\nRodar as queries presentes no arquivo quiz.sql no terminal do sqlite aberto nessa base de dados.\n\n\nPopular um arquivo users.csv com usuarios(*Obs: -logins 'admin' e 'fabioja' s\u00e3o reservados para professores).\n\n\nRodar o script adduser.py para adicionar esses usuarios na base de dados.\n\n\nRodar o arquivo softdes.py, que ir\u00e1 inicializar o servidor do programa.\n\n\n\n\nInstala\u00e7\u00e3o do software\n\n\nsqlite3, Flask, Flask_httpauth, hashlib e python s\u00e3o pacotes necess\u00e1rios para rodar o servidor.\n\n\nEstrutura do c\u00f3digo em alto n\u00edvel\n\n\nEsse projeto faz uso de python, javascript, SQL, html, css e javascript",
-            "title": "Dev"
+            "title": "Guia de Desenvolvimento"
         },
         {
             "location": "/dev/#guia-para-os-desenvolvedores",
@@ -81,49 +91,19 @@
             "title": "Estrutura do c\u00f3digo em alto n\u00edvel"
         },
         {
-            "location": "/teachers/",
-            "text": "Guia para os professores\n\n\nComo adicionar usuarios\n\n\nPara adicionar novos usu\u00e1rios \u00e9 necess\u00e1rio alterar/criar um arquivo users.csv na ra\u00edz do projeto.\nEle deve ser populado linha por linha, em que cada linha representa um aluno, no formato : Login,Senha\n\n\n\nFeito isso, o script add_user.py dever\u00e1 ser rodado para adicionar na base de dados os novos usu\u00e1rios.\n\n\nComo adicionar novos desafios\n\n\nEntrar na base de dados atrav\u00e9s do sqlite3 e rodar a uma query de inser\u00e7\u00e3o na table QUIZ.\n\n\nExemplo:\n\n\nInsert into QUIZ\n(numb, release, expire, problem, tests, results, diagnosis)\nvalues\n(2, '2018-08-02', '2020-12-31 23:59:59', 'Exemplo de problema-novo', '[[1],[2],[3]]', '[0, 0, 0]', '[\"a\",\"b\",\"c\"]')\n\n\n\nNa imagem acima \u00e9 poss\u00edvel verificar que o novo desafio foi inserido e est\u00e1 vis\u00edvel como \"Desafio 2\" no menu lateral.",
-            "title": "Teachers"
+            "location": "/api/",
+            "text": "Guia para a API\n\n\nCommands\n\n\n\n\n\n\nhttp://0.0.0.0/\n \n\n\n[GET]\n - Carrega o pop-up de login inicialmente e caso j\u00e1 esteja logado carrega a pagina inicial mostrando os desafios dispon\u00edveis e envios.\n  * Parameters: ID (Id do desafio a ser exibido) - N\u00e3o obrigat\u00f3rio.\n\n\n[POST]\n - Envia o desafio carregado pelo aluno para o lambda.\n  * Parameters: ID (Id do desafio que foi enviado)\n  * Files: Arquivo da solu\u00e7\u00e3o ao desafio.\n\n\n\n\n\n\nhttp://0.0.0.0/pass\n \n\n\n[GET]\n - Carrega o pop-up de login inicialmente e caso j\u00e1 esteja logado a pagina para a troca de senha.\n\n\n[POST]\n - Realiza a troca de senha do usu\u00e1rio.\n * Form['old'] - Senha antiga inserida pelo usuario.\n * Form['new'] - Senha nova inserida pelo usuario.\n * Form['again'] - Senha nova repetida inserida pelo usuario.\n\n\n\n\n\n\nhttp://0.0.0.0/logout\n \n\n\n[GET]\n - Desloga o usuario e carrega o index.html.",
+            "title": "Documenta\u00e7\u00e3o da API"
         },
         {
-            "location": "/teachers/#guia-para-os-professores",
+            "location": "/api/#guia-para-a-api",
             "text": "",
-            "title": "Guia para os professores"
+            "title": "Guia para a API"
         },
         {
-            "location": "/teachers/#como-adicionar-usuarios",
-            "text": "Para adicionar novos usu\u00e1rios \u00e9 necess\u00e1rio alterar/criar um arquivo users.csv na ra\u00edz do projeto.\nEle deve ser populado linha por linha, em que cada linha representa um aluno, no formato : Login,Senha  Feito isso, o script add_user.py dever\u00e1 ser rodado para adicionar na base de dados os novos usu\u00e1rios.",
-            "title": "Como adicionar usuarios"
-        },
-        {
-            "location": "/teachers/#como-adicionar-novos-desafios",
-            "text": "Entrar na base de dados atrav\u00e9s do sqlite3 e rodar a uma query de inser\u00e7\u00e3o na table QUIZ.  Exemplo:  Insert into QUIZ\n(numb, release, expire, problem, tests, results, diagnosis)\nvalues\n(2, '2018-08-02', '2020-12-31 23:59:59', 'Exemplo de problema-novo', '[[1],[2],[3]]', '[0, 0, 0]', '[\"a\",\"b\",\"c\"]')  \nNa imagem acima \u00e9 poss\u00edvel verificar que o novo desafio foi inserido e est\u00e1 vis\u00edvel como \"Desafio 2\" no menu lateral.",
-            "title": "Como adicionar novos desafios"
-        },
-        {
-            "location": "/users/",
-            "text": "Guia para os alunos\n\n\nComo usar\n\n\n\n\nhttp://localhost:80\n - Link de acesso.\n\n\nDashboard lateral esquerda\n - Escolher desse menu o desafio que queira responder.\n\n\nEscolher Arquivo\n - Bot\u00e3o para selecionar o c\u00f3digo fonte com sua solu\u00e7\u00e3o.\n\n\nEnviar\n - Bot\u00e3o de envio.\n\n\n\n\nResposta correta\n\n\nCaso sua resposta esteja correta, o Feedback e o Resultado devem sair como na imagem a seguir:\n\n\n\n\nResposta errada\n\n\nCaso sua resposta esteja errada, o Feedback e o Resultado devem sair como na imagem a seguir:",
-            "title": "Users"
-        },
-        {
-            "location": "/users/#guia-para-os-alunos",
-            "text": "",
-            "title": "Guia para os alunos"
-        },
-        {
-            "location": "/users/#como-usar",
-            "text": "http://localhost:80  - Link de acesso.  Dashboard lateral esquerda  - Escolher desse menu o desafio que queira responder.  Escolher Arquivo  - Bot\u00e3o para selecionar o c\u00f3digo fonte com sua solu\u00e7\u00e3o.  Enviar  - Bot\u00e3o de envio.",
-            "title": "Como usar"
-        },
-        {
-            "location": "/users/#resposta-correta",
-            "text": "Caso sua resposta esteja correta, o Feedback e o Resultado devem sair como na imagem a seguir:",
-            "title": "Resposta correta"
-        },
-        {
-            "location": "/users/#resposta-errada",
-            "text": "Caso sua resposta esteja errada, o Feedback e o Resultado devem sair como na imagem a seguir:",
-            "title": "Resposta errada"
+            "location": "/api/#commands",
+            "text": "http://0.0.0.0/    [GET]  - Carrega o pop-up de login inicialmente e caso j\u00e1 esteja logado carrega a pagina inicial mostrando os desafios dispon\u00edveis e envios.\n  * Parameters: ID (Id do desafio a ser exibido) - N\u00e3o obrigat\u00f3rio.  [POST]  - Envia o desafio carregado pelo aluno para o lambda.\n  * Parameters: ID (Id do desafio que foi enviado)\n  * Files: Arquivo da solu\u00e7\u00e3o ao desafio.    http://0.0.0.0/pass    [GET]  - Carrega o pop-up de login inicialmente e caso j\u00e1 esteja logado a pagina para a troca de senha.  [POST]  - Realiza a troca de senha do usu\u00e1rio.\n * Form['old'] - Senha antiga inserida pelo usuario.\n * Form['new'] - Senha nova inserida pelo usuario.\n * Form['again'] - Senha nova repetida inserida pelo usuario.    http://0.0.0.0/logout    [GET]  - Desloga o usuario e carrega o index.html.",
+            "title": "Commands"
         }
     ]
 }
