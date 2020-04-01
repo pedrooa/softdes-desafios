@@ -151,12 +151,15 @@ APP.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?TX'
 @APP.route('/', methods=['GET', 'POST'])
 @AUTH.login_required
 def main():
+    
     msg = ''
     variable_p = 1
     challenges = get_quizes(AUTH.username())
     sent = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     if request.method == 'POST' and 'ID' in request.args:
+        print(request.args)
+        print(request.files)
         variable_id = request.args.get('ID')
         quiz = get_quiz(variable_id, AUTH.username())
         if len(quiz) == 0:
@@ -196,6 +199,7 @@ def main():
         set_user_quiz(AUTH.username(), id, sent, feedback, result)
 
     if request.method == 'GET':
+        print(request.args)
         if 'ID' in request.args:
             variable_id = request.args.get('ID')
         else:
