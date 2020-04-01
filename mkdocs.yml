@@ -5,3 +5,5 @@ nav:
     - Guia Professores: teachers.md
     - Guia de Desenvolvimento: dev.md
     - Documentação da API: api.md
+
+theme: readthedocs
